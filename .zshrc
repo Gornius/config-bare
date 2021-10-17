@@ -5,7 +5,7 @@
 [[ $- != *i* ]] && return
 
 # === Load private configs
-[[ -d $HOME/.config/.privateconfig ]] && source $HOME/.config/.privateconfig
+[[ -d $HOME/.config/.privateconfig ]] && source $HOME/.config/.privateconfig/*
 
 # === Set Vi Mode
 bindkey -v
