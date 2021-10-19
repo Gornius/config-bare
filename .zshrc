@@ -23,6 +23,9 @@ autoload -Uz compinit
 compinit
 zstyle ':completion:*' menu select
 
+# Match lowercase to uppercase
+zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
+
 # === Setup aliases
 	# = Colors for some commands
 	alias ls='ls --color=auto'
