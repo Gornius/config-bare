@@ -4,6 +4,12 @@
 # === Ignore rest of config if not run as interactive
 [[ $- != *i* ]] && return
 
+# === Enable history
+HISTFILE=$HOME/.zsh_history
+HISTSIZE=10000
+SAVEHIST=10000
+setopt appendhistory
+
 # === Load private configs
 [[ -d $HOME/.config/.privateconfig ]] && source $HOME/.config/.privateconfig/*
 
@@ -15,12 +21,14 @@ bindkey "^[[H" beginning-of-line
 bindkey "^[[F" end-of-line
 
 # === Set prompt
-PROMPT='%F{11}$: %f%'
-RPROMPT='%F{13}%~%f%'
+PROMPT=$'%{\e[93m%}$: %{\e[m%}'
+RPROMPT=$'%{\e[94m%}%~%{\e[m%}'
 
 # === Autocompletion
 autoload -Uz compinit
 compinit
+
+# Use menu style
 zstyle ':completion:*' menu select
 
 # Match lowercase to uppercase
