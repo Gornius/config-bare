@@ -8,7 +8,7 @@
 HISTFILE=$HOME/.zsh_history
 HISTSIZE=10000
 SAVEHIST=10000
-setopt appendhistory
+setopt SHARE_HISTORY
 
 # === Load private configs
 [[ -d $HOME/.config/.privateconfig ]] && source $HOME/.config/.privateconfig/*
@@ -38,6 +38,9 @@ zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
 	# = Colors for some commands
 	alias ls='ls --color=auto'
 	alias grep='grep --color=auto'
+
+	# = Load private aliases
+	[[ -f $HOME/.config/private-aliases.sh ]] && source $HOME/.config/private-aliases.sh
 
 	# = Bare repository config
 	alias gc="git --git-dir=$HOME/.cfg --work-tree=$HOME"
