@@ -14,7 +14,9 @@ setopt SHARE_HISTORY
 [[ -d $HOME/.config/.privateconfig ]] && source $HOME/.config/.privateconfig/*
 
 # === Set Vi Mode
-bindkey -v
+set -o vi
+	# Eliminate delay problem
+	KEYTIMEOUT=1
 
 # === Enable Home/End keys
 bindkey "^[[H" beginning-of-line
@@ -44,3 +46,4 @@ zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
 
 	# = Bare repository config
 	alias gc="git --git-dir=$HOME/.cfg --work-tree=$HOME"
+
