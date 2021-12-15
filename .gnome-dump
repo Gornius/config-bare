@@ -1,5 +1,35 @@
+[com/github/tkashkin/gamehub/auth/gog]
+access-token='tVFEtD1kSVR941mBz5OS0GfikwH96lBD0azlHs9VJBkh48vI49yK1wUc1jr1eJpJf4Pw3C0HiZiWfVJ16GiUolwBU5t-q3qhuc-b0MktWWOQFQNIy8xfFM5X5L4zCDVYT11c2eoAcmnJR4s1sbpyVMGuLTKR3mvhMtXZUPCYXAX_pEFJvQZxJDc1JZtS_n3C'
+authenticated=true
+refresh-token='oqE3UbL97of0wSM-t29NS0naoQeh_dHTOFE3v3ML00UelRJFSsIdzaJzGmYqJtQA'
+
+[com/github/tkashkin/gamehub/auth/humble]
+enabled=false
+
+[com/github/tkashkin/gamehub/auth/itch]
+enabled=false
+
+[com/github/tkashkin/gamehub/auth/steam]
+enabled=false
+
+[com/github/tkashkin/gamehub/controller]
+ignored-controllers=@as []
+known-controllers=@as []
+
+[com/github/tkashkin/gamehub/saved-state/window]
+height=720
+width=1108
+x=435
+y=125
+
+[com/github/tkashkin/gamehub/tweaks]
+global=@as []
+
+[com/github/tkashkin/gamehub/ui/appearance]
+list-style=['installed-icon', 'installed-title-bold', 'installed-status', 'uninstalled-icon', 'uninstalled-dim']
+
 [org/gnome/control-center]
-last-panel='wifi'
+last-panel='sound'
 
 [org/gnome/desktop/a11y]
 always-show-universal-access-status=false
@@ -124,10 +154,13 @@ power-saver-profile-on-low-battery=true
 [org/gnome/shell]
 disable-user-extensions=false
 disabled-extensions=['just-perfection-desktop@just-perfection']
-enabled-extensions=['dash-to-dock@micxgx.gmail.com', 'user-theme@gnome-shell-extensions.gcampax.github.com']
+enabled-extensions=['dash-to-dock@micxgx.gmail.com', 'user-theme@gnome-shell-extensions.gcampax.github.com', 'appindicatorsupport@rgcjonas.gmail.com', 'Vitals@CoreCoding.com']
 favorite-apps=['brave-browser.desktop', 'Alacritty.desktop', 'code-oss.desktop', 'discord.desktop']
 had-bluetooth-devices-setup=true
 welcome-dialog-last-shown-version='41.1'
+
+[org/gnome/shell/extensions/appindicator]
+tray-pos='right'
 
 [org/gnome/shell/extensions/dash-to-dock]
 apply-custom-theme=false
@@ -142,8 +175,10 @@ extend-height=true
 height-fraction=0.90000000000000002
 hot-keys=true
 hotkeys-overlay=false
+icon-size-fixed=false
 running-indicator-dominant-color=true
 running-indicator-style='DASHES'
+show-apps-at-top=false
 transparency-mode='FIXED'
 
 [org/gnome/shell/extensions/just-perfection]
@@ -176,6 +211,9 @@ workspaces-in-app-grid=true
 
 [org/gnome/shell/extensions/user-theme]
 name=''
+
+[org/gnome/shell/extensions/vitals]
+hot-sensors=['__fan_avg__', '__temperature_avg__', '_processor_average_']
 
 [org/gnome/shell/world-clocks]
 locations=@av []
