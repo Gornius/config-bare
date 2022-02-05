@@ -85,6 +85,7 @@ power-button-action='nothing'
 sleep-inactive-ac-type='nothing'
 
 [org/gnome/shell]
+disabled-extensions=['forge@jmmaranan.com']
 enabled-extensions=['dash-to-panel@jderose9.github.com', 'rrc@ogarcia.me', 'appindicatorsupport@rgcjonas.gmail.com']
 favorite-apps=['firefox.desktop', 'org.gnome.Terminal.desktop', 'code-oss.desktop', 'discord.desktop']
 welcome-dialog-last-shown-version='41.3'
@@ -111,8 +112,14 @@ trans-use-custom-bg=true
 tray-padding=-1
 window-preview-title-position='TOP'
 
+[org/gnome/shell/extensions/forge]
+css-last-update=uint32 37
+
 [org/gnome/shell/world-clocks]
 locations=@av []
+
+[org/gnome/software]
+check-timestamp=int64 1644057488
 
 [org/gnome/terminal/legacy/profiles:/:b1dcc9dd-5262-4d8d-a863-c897e6d979b9]
 font='Source Code Pro 12'
