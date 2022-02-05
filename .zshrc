@@ -46,4 +46,5 @@ zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
 
 	# = Bare repository config
 	alias gc="git --git-dir=$HOME/gits/config-bare.git --work-tree=$HOME"
+	alias gcup='gc add -u && gc commit -m. && gc push --set-upstream origin master'
 
