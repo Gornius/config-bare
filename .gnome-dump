@@ -1,3 +1,22 @@
+[ca/desrt/dconf-editor]
+saved-pathbar-path='/org/flozz/nautilus-terminal/background-color'
+saved-view='/org/flozz/nautilus-terminal/background-color'
+show-warning=false
+window-height=500
+window-is-maximized=false
+window-width=540
+
+[org/flozz/nautilus-terminal]
+background-color='#282828'
+custom-command='/bin/sh'
+custom-font=''
+default-show-terminal=false
+foreground-color='#ffffff'
+min-terminal-height=uint32 5
+terminal-bottom=true
+toggle-shortcut='F4'
+use-custom-command=false
+
 [org/gnome/calendar]
 active-view='month'
 window-maximized=true
@@ -5,7 +24,7 @@ window-position=(0, 0)
 window-size=(1920, 1048)
 
 [org/gnome/control-center]
-last-panel='power'
+last-panel='background'
 
 [org/gnome/desktop/app-folders]
 folder-children=['Utilities', 'YaST']
@@ -20,6 +39,13 @@ translate=true
 categories=['X-SuSE-YaST']
 name='suse-yast.directory'
 translate=true
+
+[org/gnome/desktop/background]
+color-shading-type='solid'
+picture-options='zoom'
+picture-uri='file:///home/cisu/.local/share/backgrounds/2022-02-05-13-18-44-wallhaven-9m61m1.png'
+primary-color='#000000000000'
+secondary-color='#000000000000'
 
 [org/gnome/desktop/calendar]
 show-weekdate=false
@@ -41,7 +67,10 @@ icon-theme='Papirus-Dark'
 show-battery-percentage=true
 
 [org/gnome/desktop/notifications]
-application-children=['firefox']
+application-children=['firefox', 'discord']
+
+[org/gnome/desktop/notifications/application/discord]
+application-id='discord.desktop'
 
 [org/gnome/desktop/notifications/application/firefox]
 application-id='firefox.desktop'
@@ -50,6 +79,13 @@ application-id='firefox.desktop'
 natural-scroll=false
 tap-to-click=true
 two-finger-scrolling-enabled=true
+
+[org/gnome/desktop/screensaver]
+color-shading-type='solid'
+picture-options='zoom'
+picture-uri='file:///home/cisu/.local/share/backgrounds/2022-02-05-13-18-44-wallhaven-9m61m1.png'
+primary-color='#000000000000'
+secondary-color='#000000000000'
 
 [org/gnome/desktop/wm/keybindings]
 close=['<Super>x']
@@ -75,10 +111,15 @@ center-new-windows=true
 [org/gnome/nautilus/preferences]
 default-folder-viewer='icon-view'
 search-filter-time-type='last_modified'
+search-view='list-view'
 
 [org/gnome/nautilus/window-state]
 initial-size=(890, 550)
 maximized=false
+
+[org/gnome/nm-applet/eap/d6e95475-2371-4600-a1e0-1b07e419f892]
+ignore-ca-cert=false
+ignore-phase2-ca-cert=false
 
 [org/gnome/settings-daemon/plugins/power]
 power-button-action='nothing'
@@ -121,7 +162,13 @@ locations=@av []
 [org/gnome/software]
 check-timestamp=int64 1644057488
 
+[org/gnome/terminal/legacy]
+mnemonics-enabled=false
+theme-variant='system'
+
 [org/gnome/terminal/legacy/profiles:/:b1dcc9dd-5262-4d8d-a863-c897e6d979b9]
+default-size-columns=511
+default-size-rows=511
 font='Source Code Pro 12'
 use-system-font=false
 
@@ -131,3 +178,17 @@ show-extensions-notice=false
 [org/gtk/gtk4/settings/color-chooser]
 custom-colors=[(0.15686275064945221, 0.15686275064945221, 0.15686275064945221, 1.0)]
 selected-color=(true, 0.15686275064945221, 0.15686275064945221, 0.15686275064945221, 1.0)
+
+[org/gtk/settings/file-chooser]
+date-format='regular'
+location-mode='path-bar'
+show-hidden=false
+show-size-column=true
+show-type-column=true
+sidebar-width=162
+sort-column='name'
+sort-directories-first=false
+sort-order='ascending'
+type-format='category'
+window-position=(68, 42)
+window-size=(1231, 902)
