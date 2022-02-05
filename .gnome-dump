@@ -24,7 +24,7 @@ window-position=(0, 0)
 window-size=(1920, 1048)
 
 [org/gnome/control-center]
-last-panel='background'
+last-panel='network'
 
 [org/gnome/desktop/app-folders]
 folder-children=['Utilities', 'YaST']
@@ -67,13 +67,16 @@ icon-theme='Papirus-Dark'
 show-battery-percentage=true
 
 [org/gnome/desktop/notifications]
-application-children=['firefox', 'discord']
+application-children=['firefox', 'discord', 'nm-applet']
 
 [org/gnome/desktop/notifications/application/discord]
 application-id='discord.desktop'
 
 [org/gnome/desktop/notifications/application/firefox]
 application-id='firefox.desktop'
+
+[org/gnome/desktop/notifications/application/nm-applet]
+application-id='nm-applet.desktop'
 
 [org/gnome/desktop/peripherals/touchpad]
 natural-scroll=false
@@ -116,6 +119,10 @@ search-view='list-view'
 [org/gnome/nautilus/window-state]
 initial-size=(890, 550)
 maximized=false
+
+[org/gnome/nm-applet/eap/8c2c6954-7556-479f-9b67-cb5a68a7a89d]
+ignore-ca-cert=false
+ignore-phase2-ca-cert=false
 
 [org/gnome/nm-applet/eap/d6e95475-2371-4600-a1e0-1b07e419f892]
 ignore-ca-cert=false
@@ -190,5 +197,5 @@ sort-column='name'
 sort-directories-first=false
 sort-order='ascending'
 type-format='category'
-window-position=(68, 42)
+window-position=(689, 70)
 window-size=(1231, 902)
