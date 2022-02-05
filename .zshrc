@@ -45,5 +45,5 @@ zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
 	[[ -f $HOME/.config/private-aliases.sh ]] && source $HOME/.config/private-aliases.sh
 
 	# = Bare repository config
-	alias gc="git --git-dir=$HOME/.cfg --work-tree=$HOME"
+	alias gc="git --git-dir=$HOME/gits/config-bare.git --work-tree=$HOME"
 

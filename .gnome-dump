@@ -1,41 +1,11 @@
-[com/github/tkashkin/gamehub/auth/gog]
-access-token='tVFEtD1kSVR941mBz5OS0GfikwH96lBD0azlHs9VJBkh48vI49yK1wUc1jr1eJpJf4Pw3C0HiZiWfVJ16GiUolwBU5t-q3qhuc-b0MktWWOQFQNIy8xfFM5X5L4zCDVYT11c2eoAcmnJR4s1sbpyVMGuLTKR3mvhMtXZUPCYXAX_pEFJvQZxJDc1JZtS_n3C'
-authenticated=true
-refresh-token='oqE3UbL97of0wSM-t29NS0naoQeh_dHTOFE3v3ML00UelRJFSsIdzaJzGmYqJtQA'
-
-[com/github/tkashkin/gamehub/auth/humble]
-enabled=false
-
-[com/github/tkashkin/gamehub/auth/itch]
-enabled=false
-
-[com/github/tkashkin/gamehub/auth/steam]
-enabled=false
-
-[com/github/tkashkin/gamehub/controller]
-ignored-controllers=@as []
-known-controllers=@as []
-
-[com/github/tkashkin/gamehub/saved-state/window]
-height=720
-width=1108
-x=435
-y=125
-
-[com/github/tkashkin/gamehub/tweaks]
-global=@as []
-
-[com/github/tkashkin/gamehub/ui/appearance]
-list-style=['installed-icon', 'installed-title-bold', 'installed-status', 'uninstalled-icon', 'uninstalled-dim']
+[org/gnome/calendar]
+active-view='month'
+window-maximized=true
+window-position=(0, 0)
+window-size=(1920, 1048)
 
 [org/gnome/control-center]
-last-panel='sound'
-
-[org/gnome/desktop/a11y]
-always-show-universal-access-status=false
-
-[org/gnome/desktop/a11y/magnifier]
-mouse-tracking='proportional'
+last-panel='keyboard'
 
 [org/gnome/desktop/app-folders]
 folder-children=['Utilities', 'YaST']
@@ -51,25 +21,15 @@ categories=['X-SuSE-YaST']
 name='suse-yast.directory'
 translate=true
 
-[org/gnome/desktop/background]
-color-shading-type='solid'
-picture-options='zoom'
-picture-uri='file:///home/cisu/.local/share/backgrounds/2021-12-15-22-11-19-DSC_2629.jpeg'
-primary-color='#000000000000'
-secondary-color='#000000000000'
-
 [org/gnome/desktop/calendar]
-show-weekdate=true
+show-weekdate=false
 
 [org/gnome/desktop/input-sources]
 per-window=false
-show-all-sources=true
 sources=[('xkb', 'pl')]
+xkb-options=@as []
 
 [org/gnome/desktop/interface]
-clock-show-seconds=false
-clock-show-weekday=true
-cursor-theme='Adwaita'
 document-font-name='Ubuntu 11'
 enable-animations=false
 font-antialiasing='rgba'
@@ -78,56 +38,25 @@ font-name='Ubuntu 11'
 gtk-im-module='gtk-im-context-simple'
 gtk-theme='Adwaita-dark'
 icon-theme='Papirus-Dark'
-locate-pointer=false
-monospace-font-name='Hack 10'
-show-battery-percentage=true
 
 [org/gnome/desktop/notifications]
-application-children=['org-gnome-shell-extensions', 'org-gnome-nautilus', 'gnome-power-panel', 'org-gnome-tweaks']
+application-children=['firefox']
 
-[org/gnome/desktop/notifications/application/gnome-power-panel]
-application-id='gnome-power-panel.desktop'
-
-[org/gnome/desktop/notifications/application/org-gnome-nautilus]
-application-id='org.gnome.Nautilus.desktop'
-
-[org/gnome/desktop/notifications/application/org-gnome-shell-extensions]
-application-id='org.gnome.Shell.Extensions.desktop'
-
-[org/gnome/desktop/notifications/application/org-gnome-tweaks]
-application-id='org.gnome.tweaks.desktop'
+[org/gnome/desktop/notifications/application/firefox]
+application-id='firefox.desktop'
 
 [org/gnome/desktop/peripherals/touchpad]
-click-method='fingers'
 natural-scroll=false
 tap-to-click=true
 two-finger-scrolling-enabled=true
 
-[org/gnome/desktop/screensaver]
-color-shading-type='solid'
-lock-delay=uint32 0
-picture-options='zoom'
-picture-uri='file:///home/cisu/.local/share/backgrounds/2021-12-15-22-11-19-DSC_2629.jpeg'
-primary-color='#000000000000'
-secondary-color='#000000000000'
-
-[org/gnome/desktop/search-providers]
-sort-order=['org.gnome.Contacts.desktop', 'org.gnome.Documents.desktop', 'org.gnome.Nautilus.desktop']
-
-[org/gnome/desktop/session]
-idle-delay=uint32 300
-
 [org/gnome/desktop/wm/keybindings]
-close=['<Super>w']
+close=['<Super>x']
 toggle-maximized=['<Super>f']
 
 [org/gnome/desktop/wm/preferences]
-button-layout='appmenu:minimize,maximize,close'
+resize-with-right-button=true
 titlebar-font='Ubuntu 11'
-
-[org/gnome/eog/view]
-background-color='rgb(0,0,0)'
-use-background-color=true
 
 [org/gnome/epiphany/state]
 is-maximized=false
@@ -138,110 +67,54 @@ window-size=(1024, 768)
 migrated=true
 network-monitor-gio-name=''
 
+[org/gnome/mutter]
+center-new-windows=true
+
 [org/gnome/nautilus/preferences]
 default-folder-viewer='icon-view'
 search-filter-time-type='last_modified'
-search-view='list-view'
 
 [org/gnome/nautilus/window-state]
 initial-size=(890, 550)
 maximized=false
 
-[org/gnome/settings-daemon/plugins/power]
-power-button-action='nothing'
-power-saver-profile-on-low-battery=true
-
 [org/gnome/shell]
-disable-user-extensions=false
-disabled-extensions=['just-perfection-desktop@just-perfection']
-enabled-extensions=['dash-to-dock@micxgx.gmail.com', 'user-theme@gnome-shell-extensions.gcampax.github.com', 'appindicatorsupport@rgcjonas.gmail.com', 'Vitals@CoreCoding.com']
-favorite-apps=['brave-browser.desktop', 'Alacritty.desktop', 'code-oss.desktop', 'discord.desktop']
-had-bluetooth-devices-setup=true
-welcome-dialog-last-shown-version='41.1'
+enabled-extensions=['dash-to-panel@jderose9.github.com', 'rrc@ogarcia.me', 'appindicatorsupport@rgcjonas.gmail.com']
+favorite-apps=['firefox.desktop', 'org.gnome.Terminal.desktop', 'code-oss.desktop', 'discord.desktop']
+welcome-dialog-last-shown-version='41.3'
 
-[org/gnome/shell/extensions/appindicator]
-tray-pos='right'
-
-[org/gnome/shell/extensions/dash-to-dock]
-apply-custom-theme=false
-background-color='rgb(36,31,49)'
-background-opacity=0.90000000000000002
-custom-background-color=true
-custom-theme-shrink=true
-dash-max-icon-size=38
-dock-fixed=true
-dock-position='LEFT'
-extend-height=true
-height-fraction=0.90000000000000002
-hot-keys=true
-hotkeys-overlay=false
-icon-size-fixed=false
-running-indicator-dominant-color=true
-running-indicator-style='DASHES'
-show-apps-at-top=false
-transparency-mode='FIXED'
-
-[org/gnome/shell/extensions/just-perfection]
-accessibility-menu=true
-app-menu=true
-app-menu-icon=true
-background-menu=true
-dash=true
-dash-icon-size=0
-double-super-to-appgrid=true
-gesture=true
-hot-corner=false
-osd=true
-panel=true
-panel-arrow=true
-panel-corner-size=0
-panel-in-overview=true
-ripple-box=true
-search=true
-show-apps-button=true
-startup-status=1
-theme=false
-window-demands-attention-focus=false
-window-picker-icon=true
-window-preview-caption=true
-workspace=true
-workspace-background-corner-size=0
-workspace-popup=true
-workspaces-in-app-grid=true
-
-[org/gnome/shell/extensions/user-theme]
-name=''
-
-[org/gnome/shell/extensions/vitals]
-hot-sensors=['__fan_avg__', '__temperature_avg__', '_processor_average_']
+[org/gnome/shell/extensions/dash-to-panel]
+animate-appicon-hover-animation-extent={'RIPPLE': 4, 'PLANK': 4, 'SIMPLE': 1}
+appicon-margin=2
+appicon-padding=6
+available-monitors=[0]
+dot-color-dominant=true
+dot-color-override=false
+dot-position='TOP'
+focus-highlight-dominant=false
+hotkeys-overlay-combo='TEMPORARILY'
+leftbox-padding=-1
+panel-anchors='{"0":"MIDDLE"}'
+panel-element-positions='{"0":[{"element":"showAppsButton","visible":true,"position":"stackedTL"},{"element":"activitiesButton","visible":false,"position":"stackedTL"},{"element":"leftBox","visible":true,"position":"stackedTL"},{"element":"taskbar","visible":true,"position":"stackedTL"},{"element":"centerBox","visible":true,"position":"stackedBR"},{"element":"dateMenu","visible":true,"position":"centerMonitor"},{"element":"rightBox","visible":true,"position":"stackedBR"},{"element":"systemMenu","visible":true,"position":"stackedBR"},{"element":"desktopButton","visible":true,"position":"stackedBR"}]}'
+panel-lengths='{"0":100}'
+panel-positions='{"0":"TOP"}'
+panel-sizes='{"0":42}'
+status-icon-padding=-1
+trans-bg-color='#282828'
+trans-use-custom-bg=true
+tray-padding=-1
+window-preview-title-position='TOP'
 
 [org/gnome/shell/world-clocks]
 locations=@av []
 
-[org/gnome/software]
-check-timestamp=int64 1639576029
-first-run=false
+[org/gnome/terminal/legacy/profiles:/:b1dcc9dd-5262-4d8d-a863-c897e6d979b9]
+font='Source Code Pro 12'
+use-system-font=false
 
 [org/gnome/tweaks]
 show-extensions-notice=false
 
 [org/gtk/gtk4/settings/color-chooser]
-custom-colors=[(0.15686275064945221, 0.15686275064945221, 0.15686275064945221, 1.0), (0.14117647707462311, 0.19607843458652496, 0.12156862765550613, 1.0), (0.046233318746089935, 0.24333333969116211, 0.15273089706897736, 1.0), (0.046233333647251129, 0.24333333969116211, 0.15273091197013855, 1.0), (0.14117647707462311, 0.12156862765550613, 0.19607843458652496, 1.0), (0.14117646217346191, 0.12156862765550613, 0.19215686619281769, 1.0), (0.23333333432674408, 0.10577778518199921, 0.10577778518199921, 1.0), (0.23333333432674408, 0.10577777773141861, 0.10577777773141861, 1.0)]
-selected-color=(true, 0.14117647707462311, 0.12156862765550613, 0.19215686619281769, 1.0)
-
-[org/gtk/settings/file-chooser]
-date-format='regular'
-location-mode='path-bar'
-show-hidden=false
-show-size-column=true
-show-type-column=true
-sidebar-width=162
-sort-column='name'
-sort-directories-first=false
-sort-order='ascending'
-type-format='category'
-window-position=(388, 78)
-window-size=(1203, 902)
-
-[system/locale]
-region='pl_PL.UTF-8'
+custom-colors=[(0.15686275064945221, 0.15686275064945221, 0.15686275064945221, 1.0)]
+selected-color=(true, 0.15686275064945221, 0.15686275064945221, 0.15686275064945221, 1.0)
