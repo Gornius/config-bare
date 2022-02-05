@@ -5,7 +5,7 @@ window-position=(0, 0)
 window-size=(1920, 1048)
 
 [org/gnome/control-center]
-last-panel='keyboard'
+last-panel='power'
 
 [org/gnome/desktop/app-folders]
 folder-children=['Utilities', 'YaST']
@@ -38,6 +38,7 @@ font-name='Ubuntu 11'
 gtk-im-module='gtk-im-context-simple'
 gtk-theme='Adwaita-dark'
 icon-theme='Papirus-Dark'
+show-battery-percentage=true
 
 [org/gnome/desktop/notifications]
 application-children=['firefox']
@@ -55,6 +56,7 @@ close=['<Super>x']
 toggle-maximized=['<Super>f']
 
 [org/gnome/desktop/wm/preferences]
+button-layout='appmenu:minimize,maximize,close'
 resize-with-right-button=true
 titlebar-font='Ubuntu 11'
 
@@ -77,6 +79,10 @@ search-filter-time-type='last_modified'
 [org/gnome/nautilus/window-state]
 initial-size=(890, 550)
 maximized=false
+
+[org/gnome/settings-daemon/plugins/power]
+power-button-action='nothing'
+sleep-inactive-ac-type='nothing'
 
 [org/gnome/shell]
 enabled-extensions=['dash-to-panel@jderose9.github.com', 'rrc@ogarcia.me', 'appindicatorsupport@rgcjonas.gmail.com']
