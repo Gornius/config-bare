@@ -17,6 +17,11 @@ terminal-bottom=true
 toggle-shortcut='F4'
 use-custom-command=false
 
+[org/gnome/books]
+window-maximized=false
+window-position=[488, 177]
+window-size=[768, 600]
+
 [org/gnome/calendar]
 active-view='month'
 window-maximized=true
@@ -24,7 +29,7 @@ window-position=(0, 0)
 window-size=(1920, 1048)
 
 [org/gnome/control-center]
-last-panel='network'
+last-panel='background'
 
 [org/gnome/desktop/app-folders]
 folder-children=['Utilities', 'YaST']
@@ -56,6 +61,7 @@ sources=[('xkb', 'pl')]
 xkb-options=@as []
 
 [org/gnome/desktop/interface]
+cursor-size=24
 document-font-name='Ubuntu 11'
 enable-animations=false
 font-antialiasing='rgba'
@@ -67,7 +73,7 @@ icon-theme='Papirus-Dark'
 show-battery-percentage=true
 
 [org/gnome/desktop/notifications]
-application-children=['firefox', 'discord', 'nm-applet']
+application-children=['firefox', 'discord', 'nm-applet', 'org-gnome-terminal', 'libreoffice-writer']
 
 [org/gnome/desktop/notifications/application/discord]
 application-id='discord.desktop'
@@ -75,8 +81,14 @@ application-id='discord.desktop'
 [org/gnome/desktop/notifications/application/firefox]
 application-id='firefox.desktop'
 
+[org/gnome/desktop/notifications/application/libreoffice-writer]
+application-id='libreoffice-writer.desktop'
+
 [org/gnome/desktop/notifications/application/nm-applet]
 application-id='nm-applet.desktop'
+
+[org/gnome/desktop/notifications/application/org-gnome-terminal]
+application-id='org.gnome.Terminal.desktop'
 
 [org/gnome/desktop/peripherals/touchpad]
 natural-scroll=false
@@ -111,8 +123,11 @@ network-monitor-gio-name=''
 [org/gnome/mutter]
 center-new-windows=true
 
+[org/gnome/nautilus/list-view]
+default-zoom-level='small'
+
 [org/gnome/nautilus/preferences]
-default-folder-viewer='icon-view'
+default-folder-viewer='list-view'
 search-filter-time-type='last_modified'
 search-view='list-view'
 
@@ -128,15 +143,30 @@ ignore-phase2-ca-cert=false
 ignore-ca-cert=false
 ignore-phase2-ca-cert=false
 
+[org/gnome/settings-daemon/plugins/color]
+night-light-enabled=false
+
 [org/gnome/settings-daemon/plugins/power]
 power-button-action='nothing'
 sleep-inactive-ac-type='nothing'
 
 [org/gnome/shell]
-disabled-extensions=['forge@jmmaranan.com']
-enabled-extensions=['dash-to-panel@jderose9.github.com', 'rrc@ogarcia.me', 'appindicatorsupport@rgcjonas.gmail.com']
+disable-user-extensions=false
+disabled-extensions=['forge@jmmaranan.com', 'blur-my-shell@aunetx']
+enabled-extensions=['dash-to-panel@jderose9.github.com', 'rrc@ogarcia.me', 'appindicatorsupport@rgcjonas.gmail.com', 'sound-output-device-chooser@kgshank.net']
 favorite-apps=['firefox.desktop', 'org.gnome.Terminal.desktop', 'code-oss.desktop', 'discord.desktop']
+had-bluetooth-devices-setup=false
 welcome-dialog-last-shown-version='41.3'
+
+[org/gnome/shell/extensions/blur-my-shell]
+appfolder-dialog-opacity=0.12
+blur-dash=true
+brightness=0.59999999999999998
+dash-opacity=0.12
+debug=false
+hacks-level=1
+hidetopbar=false
+sigma=30
 
 [org/gnome/shell/extensions/dash-to-panel]
 animate-appicon-hover-animation-extent={'RIPPLE': 4, 'PLANK': 4, 'SIMPLE': 1}
@@ -147,16 +177,25 @@ dot-color-dominant=true
 dot-color-override=false
 dot-position='TOP'
 focus-highlight-dominant=false
-hotkeys-overlay-combo='TEMPORARILY'
+hot-keys=true
+hotkeys-overlay-combo='NEVER'
 leftbox-padding=-1
+middle-click-action='LAUNCH'
 panel-anchors='{"0":"MIDDLE"}'
-panel-element-positions='{"0":[{"element":"showAppsButton","visible":true,"position":"stackedTL"},{"element":"activitiesButton","visible":false,"position":"stackedTL"},{"element":"leftBox","visible":true,"position":"stackedTL"},{"element":"taskbar","visible":true,"position":"stackedTL"},{"element":"centerBox","visible":true,"position":"stackedBR"},{"element":"dateMenu","visible":true,"position":"centerMonitor"},{"element":"rightBox","visible":true,"position":"stackedBR"},{"element":"systemMenu","visible":true,"position":"stackedBR"},{"element":"desktopButton","visible":true,"position":"stackedBR"}]}'
+panel-element-positions='{"0":[{"element":"showAppsButton","visible":true,"position":"stackedTL"},{"element":"activitiesButton","visible":false,"position":"stackedTL"},{"element":"taskbar","visible":true,"position":"stackedTL"},{"element":"leftBox","visible":true,"position":"stackedTL"},{"element":"centerBox","visible":true,"position":"centerMonitor"},{"element":"dateMenu","visible":true,"position":"centerMonitor"},{"element":"rightBox","visible":true,"position":"stackedBR"},{"element":"systemMenu","visible":true,"position":"stackedBR"},{"element":"desktopButton","visible":true,"position":"stackedBR"}]}'
 panel-lengths='{"0":100}'
 panel-positions='{"0":"TOP"}'
 panel-sizes='{"0":42}'
+secondarymenu-contains-showdetails=false
+shift-click-action='MINIMIZE'
+shift-middle-click-action='LAUNCH'
+show-apps-icon-file='/home/cisu/Pictures/1024px-Faenza-start-here-archlinux-symbolic.svg.png'
+show-apps-override-escape=true
 status-icon-padding=-1
 trans-bg-color='#282828'
+trans-panel-opacity=0.80000000000000004
 trans-use-custom-bg=true
+trans-use-custom-opacity=false
 tray-padding=-1
 window-preview-title-position='TOP'
 
@@ -167,16 +206,17 @@ css-last-update=uint32 37
 locations=@av []
 
 [org/gnome/software]
-check-timestamp=int64 1644057488
+check-timestamp=int64 1644578493
 
 [org/gnome/terminal/legacy]
 mnemonics-enabled=false
 theme-variant='system'
 
 [org/gnome/terminal/legacy/profiles:/:b1dcc9dd-5262-4d8d-a863-c897e6d979b9]
+audible-bell=false
 default-size-columns=511
 default-size-rows=511
-font='Source Code Pro 12'
+font='Hack 12'
 use-system-font=false
 
 [org/gnome/tweaks]
@@ -186,6 +226,19 @@ show-extensions-notice=false
 custom-colors=[(0.15686275064945221, 0.15686275064945221, 0.15686275064945221, 1.0)]
 selected-color=(true, 0.15686275064945221, 0.15686275064945221, 0.15686275064945221, 1.0)
 
+[org/gtk/gtk4/settings/file-chooser]
+date-format='regular'
+location-mode='path-bar'
+show-hidden=false
+show-size-column=true
+show-type-column=true
+sidebar-width=171
+sort-column='name'
+sort-directories-first=false
+sort-order='ascending'
+type-format='category'
+window-size=(908, 385)
+
 [org/gtk/settings/file-chooser]
 date-format='regular'
 location-mode='path-bar'
@@ -194,8 +247,8 @@ show-size-column=true
 show-type-column=true
 sidebar-width=162
 sort-column='name'
-sort-directories-first=false
+sort-directories-first=true
 sort-order='ascending'
 type-format='category'
-window-position=(689, 70)
+window-position=(345, 105)
 window-size=(1231, 902)
