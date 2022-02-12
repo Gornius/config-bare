@@ -173,6 +173,7 @@ animate-appicon-hover-animation-extent={'RIPPLE': 4, 'PLANK': 4, 'SIMPLE': 1}
 appicon-margin=2
 appicon-padding=6
 available-monitors=[0]
+click-action='CYCLE'
 dot-color-dominant=true
 dot-color-override=false
 dot-position='TOP'
@@ -189,6 +190,7 @@ panel-sizes='{"0":42}'
 secondarymenu-contains-showdetails=false
 shift-click-action='MINIMIZE'
 shift-middle-click-action='LAUNCH'
+show-appmenu=false
 show-apps-icon-file='/home/cisu/Pictures/1024px-Faenza-start-here-archlinux-symbolic.svg.png'
 show-apps-override-escape=true
 status-icon-padding=-1
@@ -206,7 +208,7 @@ css-last-update=uint32 37
 locations=@av []
 
 [org/gnome/software]
-check-timestamp=int64 1644578493
+check-timestamp=int64 1644667428
 
 [org/gnome/terminal/legacy]
 mnemonics-enabled=false
